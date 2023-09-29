@@ -3,8 +3,26 @@
 
 const router = require("express").Router()
 
-router.get("/products", (req, res) =>  {
+router.get("/products", (req, res) =>  {  //Un get para llamar a todos mis productos
+    res.send("i am a Router")
+});
+
+router.get("/products", (req, res) =>  {  //Otro get para traer un solo producto
     res.send("i am a Router")
 })
 
+router.post("/products", (req, res) =>  { //Para crear nuevos productos
+    res.send("i am a Router")
+});
+
+router.put("/products", (req, res) =>  {  //Para actualizar productos
+    res.send("i am a Router")
+});
+
+router.delete("/products", (req, res) =>  { //Para eliminar productos 
+    res.send("i am a Router")
+});
+
 module.exports = router;
+
+
