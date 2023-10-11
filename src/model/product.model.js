@@ -9,7 +9,6 @@ const sequelize = new Sequelize( "product_test", "root", "12345", {  // Cuando s
     
 })
 
-
 async function testConnection() {
     try {
         // Probar la conexión
